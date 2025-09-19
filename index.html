@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body> 
+  <header class="navbar">
+    <h2 class="logo"></h2></h2>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button></li>
+      
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <h1>I'm <span style="color: var(--primary);">Kowshik Nivas</span></h1>
+        <p>I enjoy exploring new skills and taking on creative challenges.</p>
+      </div>
+      <img src="" alt="" />
+    </section>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm someone who enjoys learning, improving my skills, and working on interesting projects. I'm a good team player and also comfortable working alone.
+      I always try to stay organized, meet deadlines, and give my best in everything I do.</p>
+      <p>I'm excited to grow in my career, take on new challenges, and be part of something meaningful. I'm open to learning from others and always ready to try new things.</p>
+    </section>
+
+    <section class="services">
+      <div class="service-card">
+        <i class="fas fa-users"></i>
+        <h3>Teamwork</h3>
+        <p>Work well with others and believe in cooperation and support.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Self-Learning</h3>
+        <p>Always eager to explore new ideas and improve skills independently.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-clock"></i>
+        <h3>Time Management</h3>
+        <p>Handle tasks efficiently and meet deadlines on time.</p>
+      </div>
+    </section>
+    <br>
+<hr class="stats-box">
+    <section class="stats">
+      <div class="stat">
+        <h2>3+</h2>
+        <p>Academic Projects</p>
+      </div>
+      <div class="stat">
+        <h2>100%</h2>
+        <p>Effort in Learning</p>
+      </div>
+      <div class="stat">
+        <h2>10+</h2>
+        <p>Skills Explored</p>
+      </div>
+      <div class="stat">
+        <h2>∞</h2>
+        <p>Curiosity</p>
+      </div>
+    </section>
+    <br>
+<hr>
+
+<div class="education">
+
+  <div class="edu-container">
+    <h2>Education</h2>
+    <div>
+      <h3>High school</h3>
+      <p>St. marys matriculation school</p>
+      <p>Tamil nadu, india</p>
+      <div id="year">2022</div>
+    </div>
+      <div id="verti1"></div>
+<div>
+      <h3>Graduation</h3>
+      <p>St. joseph's college autonomous</p>
+      <p>Bachelor of Computer Applications</p>
+      <p>Tamil nadu, india</p>
+      <div id="year1">2022-25</div>
+    </div>
+
+    <div>
+      <h3>Course</h3>
+      <p>Elysium academy</p>
+      <p>Full stack development</p>
+      <p>Tamil nadu, india</p>
+      <div id="year">2025</div>
+    </div>
+      
+  </div>
+</div>
+
+<div class="details">
+
+  <h3>Details</h3>
+
+  <div id="verti"></div>
+
+  <div id="age">
+    <p><i style='font-size:20px' class='fas'>&#xf508;</i>  21 years</p>
+  </div>
+
+  <div id="mail">
+   <p><i style='font-size:20px' class='far'>&#xf2b6;</i>   steveharrington@gmail.com</p>
+  </div>
+
+  <div id="phone">
+    <p><i class="fa fa-phone" style="font-size:15px;"></i>   +91 9842007768</p>
+  </div>
+
+  <div id="city">
+    <p><i style='font-size:18px' class='fas'>&#xf015;</i> Trichy</p>
+  </div>
+
+</div>
+</div> 
+
+<footer class="footer">
+  <div class="socials">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">About Me</a>
+  </div>
+  
+</footer>
+
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

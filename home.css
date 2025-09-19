@@ -1,0 +1,243 @@
+    :root {
+      --bg-light: #0f0f0f;
+      --text-light: #ffffff;
+      --bg-dark: #ffffff;
+      --text-dark: #0f0f0f;
+      --primary: #ff4d00;
+      --secondary: #ffffff;
+      --card-bg-light: #1a1a1a;
+      --card-bg-dark: #f2f2f2;
+    }
+
+    body {
+      background-image: url('img/.jpeg');
+        background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    body {
+  overflow-x: hidden; /* only hide horizontal scroll */
+   }
+    .navbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      color: var(--primary);
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .toggle-btn {
+      padding: 8px 16px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 50px;
+      min-height: 100vh;
+    }
+
+    .hero-text h3 {
+  background-color: var(--primary);
+  color: #fff;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: fit-content; /* Ensures it fits only the content */
+  margin-bottom: 10px;
+}
+
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 20px 0 10px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn.primary {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .btn.secondary {
+      background-color: transparent;
+      color: white;
+      border: 1px solid #ccc;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    .hero-image img {
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(255, 77, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image img {
+        margin-top: 30px;
+        width: 80%;
+      }
+    }
+
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    /* Navbar link hover */
+.nav-links a:hover {
+  color: var(--secondary); /* or any hover color like #ffaa00 */
+  transition: color 0.3s;
+}
+
+/* Header hover links in dark mode */
+body.dark-mode .nav-links a:hover {
+  color: var(--text-dark); /* or choose another bright color like #ff6600 */
+  transition: color 0.3s;
+}
+
+.education{
+  background-color: var(--card-bg-light);
+   border-radius: 10px;
+   display: flex;
+   margin-top: 20px;
+   padding: 30px;
+   /* width: 50%; */
+}
+
+.edu-container{
+  display: flex;
+  gap: 80px;
+
+}
+
+#verti1{
+  position: absolute;
+  border-right: 1px solid var(--primary);
+  height: 110px;
+  margin-left: 160px;
+  margin-top: 5px;
+}
+
+#year{
+  background-color: rgb(17, 17, 17);
+  padding: 4px;
+  border-radius: 7px;
+  font-size: 13px;
+  width: 40px;
+}
+
+#year1{
+  background-color: rgb(17, 17, 17);
+  padding: 4px;
+  border-radius: 7px;
+  font-size: 13px;
+  width: 70px;
+}
+
+.education h2{
+  color: var(--primary);
+  margin-top: 25px;
+}
+
+.details{
+  display: flex;
+  background-color: var(--card-bg-light);
+  margin-top: 20px;
+  padding: 30px;
+  gap: 80px;
+  border-radius: 10px;
+}
+
+.details h3{
+  color: var(--primary);
+}
+
+#verti{
+  border-right: 1px solid var(--primary);
+  height: 30px;
+  margin-left: -55px;
+}
+
+#age, #mail, #phone, #city {
+  background-color: rgb(17, 17, 17);
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.details i {
+  color: var(--primary);
+  gap: 50px;
+  /* justify-content: space-between; */
+}
